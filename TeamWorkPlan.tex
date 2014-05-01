@@ -1,11 +1,12 @@
 \documentclass[11pt]{article}
 \usepackage{enumerate}
 \usepackage{amsfonts}
+\usepackage{graphicx}
+\usepackage{tabularx}
 
 \pagestyle{empty} \setlength{\parindent}{0mm}
 \addtolength{\topmargin}{-0.5in} \setlength{\textheight}{9in}
 \addtolength{\textwidth}{1.75in} \addtolength{\oddsidemargin}{-0.9in}
-
 
 \title{Sumerian Project\\
 		Team Work Plan\\
@@ -16,38 +17,110 @@
 		  Thomas Fritchman}
 \date{}
 
-
 \begin{document}
 \maketitle
 \newpage
 
+\tableofcontents
+\newpage
+
+\begin{center}
+\Large Revision History\\
+\begin{tabularx}{\textwidth}{|c|X|c|}
+	\hline
+	\textbf{Revision} & \textbf{Description} & \textbf{Date}\\ \hline
+	1.0 & Initial Document & 5/1/2014\\ \hline
+\end{tabularx}
+\end{center}
+\newpage
+
 \section{Team Charter}
 \subsection{Team Members}
-Seoung Jung\\
-Danielle Thurow\\
-Zachary Fox\\
-Thomas Fritchman\\
+\textbf{Project Manager} - Seoung Jung\\
+\textbf{Software Test Lead} - Danielle Thurow\\
+\textbf{Software Developer Lead} - Zachary Fox\\
+\textbf{Quality Assurance} - Thomas Fritchman
 
 \subsection{Team Roles/Responsibilites}
-\begin{tabular}{|l|l|l|l|l|l|l|l|}
+\begin{tabularx}{\textwidth}
+			{|l|X|X|X|X|X|X|X|X|X|}
     \hline
-    & Contact & Writeup & Requirements / SRS & Repository & Planning & Process Monitor & Meeting Minutes\\
-    Seoung Jung             & X &   & X &   &   &   & X \\
-    Danielle Thurow         & X &   & X & X &   &   &   \\
-    Zachary Fox             &   &   & X &   &   & X &   \\
-    Thomas Fritchman        &   & X & X &   & X &   &   \\
+    & 
+    \rotatebox{270}{Contact} & 
+    \rotatebox{270}{Writeup} & 
+    \rotatebox{270}{Attend Meetings} & 
+    \rotatebox{270}{Requirements / SRS} & 
+    \rotatebox{270}{Repository} & 
+    \rotatebox{270}{Planning} & 
+    \rotatebox{270}{Process Monitor} & 
+    \rotatebox{270}{Document Consistency Assurance} &
+    \rotatebox{270}{Meeting Minutes}\\
     \hline
-\end{tabular}
+    Seoung Jung             & X &   & X & X &   &   &   &   & X \\
+    Danielle Thurow         & X &   & X & X & X &   &   &   &   \\
+    Zachary Fox             &   & X & X & X &   &   & X &   &   \\
+    Thomas Fritchman        &   & X & X & X &   & X &   & X &   \\
+    \hline
+\end{tabularx}
+
+
+\subsection{Contacts}
+\begin{itemize}
+	\item 493 Group - Danielle
+	\item Dr. Hearne - Danielle
+	\item Dr. Garfinkle - Danielle
+	\item Aran Clausen - Seoung
+	\item Dr. Yudong Liu - Seoung
+	\item Other resources - Seoung
+\end{itemize}
     
 \subsection{Team Rules}
-Treat each other with respect.\\
-Allow all individuals and ideas to be heard.\\
-Keep an open mind.\\
-
-
+\begin{itemize}
+	\item Treat each other with respect.
+	\item Allow all individuals and ideas to be heard.
+	\item Keep an open mind.
+	\item Follow through with agreed upon areas of responsibility.
+\end{itemize}
 
 \section{Task}
+\subsection{Project Abstract}
+???\\
+Resources??
 
+\section{Timetable/Checkpoints}
+\textbf{Weekly Schedule}\\
+Mondays at 3:30 - Meet with Aran Clausen.\\
+Tuesdays at 5:15 - Optional extra meeting time.\\
+Wednesdays at 3:00 - Attend class.\\
+Friday at 3:00 - Regular meeting time.\\
 
+\begin{tabularx}{\textwidth}{|X|l|}
+	\hline
+	\textbf{Item} & \textbf{Due}\\
+	\hline
+	Requirements Development Process & 4/23/14\\ \hline
+	Team Work Plan & 4/23/14\\ \hline
+	Requirements Management Process & 4/30/14\\ \hline
+	Vision and Scope Document & 4/30/14\\ \hline
+	Use Case Definitions & 5/7/14\\ \hline
+	Software Life Cycle Definition & 5/7/14\\ \hline
+	Software Requirements Specification & 5/12/14\\ \hline
+	Requirements Validation Plan & 5/12/14\\ \hline
+	Requirements Tractability Matrix & 5/19/14\\ \hline
+	Software Quality Assurance Plan & 5/19/14\\ \hline
+	Team Presentation & 6/11/14\\ \hline
+\end{tabularx}
+
+\section{Process and Quality Assurance}
+Thomas will be primarily responsible for product quality assurance. He will review each item produced for process compliance and product quality.
+
+\section{Configuration Management/Bug Tracking}
+As the Software Test Lead, Danielle will be primarily responsible for configuration management and tracking bugs in the software.
+
+\section{Requirements Management and Development}
+As a team, we will write a Software Requirement Specification document as we learn from our client what is required by our product. We will contact Dr. Garfinkle as well as Dr. Hearne and Dr. Liu as questions concerning the requirements arise. Changes to the requirements must always be documented.
+
+\section{Verification and Validation}
+Each week evaluate the requirements and specifications --- verify that the two are still consistent with each other. If they are not consistent, each group member may propose revisions to the original specifications.
 
 \end{document}
