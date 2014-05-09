@@ -1,6 +1,8 @@
 \documentclass[11pt]{article}
 \usepackage{enumerate}
 \usepackage{amsfonts}
+\usepackage{graphicx}
+\usepackage{tabularx}
 
 \pagestyle{empty} \setlength{\parindent}{0mm}
 \addtolength{\topmargin}{-0.5in} \setlength{\textheight}{9in}
@@ -11,22 +13,124 @@
 		Requirements Development Process\\
 		CS 491}
 \author{Danielle Thurow \\
-		  Seoung\\
-		  Zachary\\
-		  Thomas}
+		  Seoung Jung\\
+		  Zachary Fox\\
+		  Thomas Fritchman}
 \date{}
 
 
 \begin{document}
 \maketitle
+\newpage
 
-\begin{enumerate}
-\item   
+\tableofcontents
+\newpage
 
+\begin{center}
+\Large Revision History\\
+\begin{tabularx}{\textwidth}{|c|X|c|}
+    \hline
+    \textbf{Revision} & \textbf{Description} & \textbf{Date}\\ \hline
+    1.0 & Initial Document & 5/9/2014\\ \hline
+\end{tabularx}
+\end{center}
+\newpage
 
+\section{PURPOSE}
+The purpose of the Requirements Development document is to solidify a concrete process that ensures both the customer and the developers embark on a valuable and feasible project. A formal process is helpful to all parties and decreases chances of miscommunication greatly.
 
-\end{enumerate}
+\section{STAKEHOLDERS}
+\begin{itemize}
+    \item Dr. Garfinkle of WWU History Department
+    \item Aran Clauson
+    \item Sumerian Texts continuation group.
+\end{itemize}
 
+\section{PROCESS}
 
+\subsection{ELICITATION}
+\textbf{Purpose:} Obtain a direction from the customer.\\
+\\
+\textbf{Entry Criteria: }Have a customer with a need or want.\\
+\\
+\textbf{Tasks:} \\
+Write a Vision and Scope Document \\
+Define requirement development process\\
+Define vision and scope\\
+Identify user classes. \\
+Identify use cases. \\
+Identify system events and responses. \\
+Observe users performing their jobs\\
+\\
+\textbf{Exit Criteria:} All requirements have been assessed and are documented.\\
+\\
+\textbf{Work Products:} \\
+Vision and Scope Document.\\
+Use cases document.\\
+
+\subsection{ANALYSIS}
+\textbf{Purpose:} Assess feasibility of customer request. \\
+\textbf{Entry Criteria:} We know what the customer wants. \\
+\\
+\textbf{Tasks:} \\
+Draw context diagram \\
+Create prototype \\
+Analyze feasibility \\
+Prioritize requirements \\
+Model the requirements \\
+Apply quality function deployment \\
+Assess reuasability and potential for expansion \\
+\\
+\textbf{Exit Criteria:}  All requests have been approved and finalized by group. \\
+\\
+\textbf{Work Products:} \\
+Context Diagram \\
+Prioritized Requirements \\
+Risk and Opportunity Study \\
+
+\subsection{SPECIFICATION}
+\textbf{Purpose:}  To formally document the customer requirements.(TODO: reword) \\
+\\
+\textbf{Entry Criteria:}  The statement of work has been received and all requests have been approved by group. \\
+\\
+\textbf{Tasks:}  \\
+Adopt SRS template \\
+Identify sources of requirements \\
+Uniquely label each requirement \\
+Record business rules \\
+Specify quality attributes \\
+\\
+\textbf{Exit Criteria:}  All requests have been approved and finalized by group. \\
+\\
+\textbf{Work Products:} \\
+SRS \\
+Supplementary Specification \\
+
+\subsection{VALIDATION}
+\textbf{Purpose:} To ensure our specification meets our customer's needs and is a feasible project. \\
+\\
+\textbf{Entry Criteria:}  Completed Specification \\
+\\
+\textbf{Tasks:} \\
+Validate SRS \\
+Define Acceptance Criteria \\
+Test requirements \\
+\\
+\textbf{Exit Criteria: } All documents approved by team and customer. \\
+\\
+\textbf{Work Products:} \\
+Requirements Validation Plan \\
+Prototype \\
+
+\section{VERIFICATION}
+Team will review documents and ensure correctness. The documents will be submitted to the customer for approval.
+
+\section{EXIT CRITERIA}
+Documents approved by customer.
+
+\section{REFERENCES}
+\textit{Software Requirements 2nd Edition}, Karl E Weigers (p. 45) Microsoft Press, Redmond, Washington, 2003
+\\
+Algae Counting Team Requirements Development Process V1.0
 
 \end{document}
