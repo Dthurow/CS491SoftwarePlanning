@@ -37,23 +37,101 @@
 
 \section{Business Requirements}
 \subsection{Background}
+Assyriologists study Ur 3 period Sumerian tablets from (?) database. Imp research involves building Sumerian social network for that time period. Current tablets contain corrupted dates which makes it difficult to do NER, a vital part of creating a Sumerian social network. Difficulties include corrupted dates, as well as an unclear year naming system in the Sumerian language which leads to ambiguous year identification. Current need for Assyriologists studying Sumerian texts is a software solution that attempts more accurate date retrieval from tablets using machine learning techniques combined with human (expert) input.
 \subsection{Business Opportunity}
+Our solution will focus on creating an interface and algorithm for identifying the dates in the tablets. We hope to identify previously unknown or mislabeled dates. The current system has a naive algorithm for determining dates while ours will use a more accurate and less naive algorithm.
 \subsection{Business Objectives and Success Criteria}
+\textbf{BO-01} Increase accuracy\\
+\textbf{SC-01} Significant Improvement
 \subsection{Customer or Market Needs}
+\begin{enumerate}
+    \item Interface for non-technical users
+    \item Integrate with current system 
+\end{enumerate}
 
 \section{Vision of the Solution}
 \subsection{Vision Statement}
+For assyriologists who study Ur period sumerian tablets, the date extrapolator is a year identifying tool that extracts year information from corrupted sumerian tablets and assigns year ranges as well as allowing expert users to add new tablets and confirm the suggested dates of the tablets.
 \subsection{Major Features}
+\textbf{FE-01} Provide users ways to add new tablets\\
+\textbf{FE-02} Has interface which allows expert users to correct the algorithm results.\\
+\textbf{FE-03} Uses expert user’s input to update and refine algorithm.\\
+\textbf{FE-04} A way to tweak algorithm \\
+\textbf{FE-05} Show statistics for each algorithm\\
+\textbf{FE-06} Have an algorithm that pulls dates out of the tablets
 \subsection{Assumptions and Dependencies}
+\textbf{AS-1:} Experts input is noncontroversial and correct \\
+\textbf{AS-2:} There is enough time \\
+\textbf{AS-3:} Pattern exists in sumerian date to create efficient algorithm \\
+ \\
+ \textbf{DE-1:} Depending on work of previous group’s work \\
 
 \section{Scope and Limitations}
 \subsection{Scope of Initial Release}
+Release 1 will be: \\
+\textbf{FE-01} Not implemented \\
+\textbf{FE-02} Not implemented \\
+\textbf{FE-03} Not implemented \\
+\textbf{FE-04} Implement way to tweak algorithm for our specific algorithm \\
+\textbf{FE-05} Basic web page that displays statistics information \\
+\textbf{FE-06} A simple implementation of a semi-naive algorithm
+
 \subsection{Scope of Subsequent Releases}
+Release 2 will be: \\
+\textbf{FE-01} Not implemented \\
+\textbf{FE-02} Provide webpage that displays algorithmically-chosen dates from text for confirmation, \\
+\textbf{FE-03} Adds confirmed dates to database and tweaks algorithm \\
+\textbf{FE-04} No update \\
+\textbf{FE-05} Give the statistics a better GUI for webpage \\
+\textbf{FE-06} Improve implementation/ statistics for our algorithm \\
+ \\
+Release 3 will be: \\
+\textbf{FE-01} Implement completely \\
+\textbf{FE-02} Tweak and improve \\
+\textbf{FE-03} Tweak and improve \\
+\textbf{FE-04} Tweak and improve \\
+\textbf{FE-05} Tweak and improve \\
+\textbf{FE-06} Tweak and improve
+
 \subsection{Limitations and Exclusions}
+\begin{itemize}
+    \item Currently striving to only improve current algorithm by blah\%
+    \item Not working with other time periods
+\end{itemize}
 
 \section{Business Context}
 \subsection{Stakeholder Profiles}
+\begin{itemize}
+    \item Assyriologists - primary users
+    \item Dr. Garfinkle - primary contact and software recipient
+    \item Aran Clauson - Project Advisor who defines general project requirements
+    \item Yudong Liu - Primary contact for technical information
+\end{itemize}
+
 \subsection{Project Priorities}
+\begin{tabularx}{\textwidth}{|l|X|l|}
+    \hline
+    \textbf{Dimension} & \textbf{Driver (state objective)} & \textbf{Degree of Freedom)} \\
+    \hline
+    Schedule &
+        \begin{itemize}
+            \item Release 1 by December 5, 2014 
+            \item Release 2 by February 11, 2015
+            \item Release 3 by March 13, 2015
+        \end{itemize}
+    & += 10 days \\
+    \hline
+    Features & in release thingie & \\
+    \hline
+    Quality & gets blah\% of dates correct & between blah-5 to infinity\% correct \\
+    \hline
+\end{tabularx}
+
 \subsection{Operating Environment}
+\begin{itemize}
+    \item Web stuff
+    \item open source software
+    \item other details TBD
+\end{itemize}
 
 \end{document}
