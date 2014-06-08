@@ -4,6 +4,7 @@
 \usepackage{graphicx}
 \usepackage{tabularx}
 \usepackage{pdflscape}
+\usepackage{hyperref}
 
 \pagestyle{empty} \setlength{\parindent}{0mm}
 \addtolength{\topmargin}{-0.5in} \setlength{\textheight}{9in}
@@ -41,7 +42,7 @@ Thomas Fritchman}
 \subsection{PURPOSE}
 For assyriologists, consistently identifying months and years when the tablets were created is a vital part of recreating a Sumerian social network. The Date Extrapolator will solve this problem in two parts, and will be integrated with the work done by the previous group.\\
 
-The first part is the implementation of an algorithm. This will identify the years and months, and will take into account things such as damage and scribes’ transcription errors. The conclusions of the algorithm will be tested against training data to analyse correctness. It will also accept outside input to attempt to correct any conclusions the algorithm has made. There will be a relatively easy way to adjust the parameters of the algorithm.\\
+The first part is the implementation of an algorithm. This will identify the years and months, and will take into account things such as damage and scribes’ transcription errors. The conclusions of the algorithm will be tested against training data to analyze correctness. It will also accept outside input to attempt to correct any conclusions the algorithm has made. There will be a relatively easy way to adjust the parameters of the algorithm.\\
 
 The second part of the solution is user interface. This will allow the user to give input on the algorithm’s correctness. It will also display statistics about the algorithm’s correctness.
 
@@ -64,7 +65,7 @@ Readers of this document include any persons involved in the development of this
 \textbf{FE-02} provide web page that displays algorithmically-chosen dates from text for confirmation\\
 \textbf{FE-03} adds confirmed dates to database and tweaks algorithm\\
 \textbf{FE-04} no update\\
-\textbf{FE-05FE-05} give the statistics a better GUI for web page\\
+\textbf{FE-05} give the statistics a better GUI for web page\\
 \textbf{FE-06} improve implementation/ statistics for our algorithm\\
 
 \textbf{Release 3 will be:}\\
@@ -76,8 +77,8 @@ Readers of this document include any persons involved in the development of this
 \textbf{FE-06}  tweak and improve
 
 \subsection{REFERENCES}
-www.wwucuneiform.com\\
-https://sites.google.com/site/wwucsseniorprojectcuneiform/
+\url{www.wwucuneiform.com}\\
+\url{https://sites.google.com/site/wwucsseniorprojectcuneiform/}
 
 \section{OVERALL DESCRIPTION}
 \subsection{PRODUCT PERSPECTIVE}
@@ -99,10 +100,10 @@ It is an extension of an existing project aiming to improve the functionality of
 This program is to be built into the currently existing web application.
 
 \subsection{ASSUMPTIONS AND DEPENDENCIES}
-\textbf{AS-1:} experts input is noncontroversial and correct
-\textbf{AS-2:} there is enough time
-\textbf{AS-3:} pattern exists in Sumerian date to create efficient algorithm
-
+\textbf{AS-1:} experts input is noncontroversial and correct\\
+\textbf{AS-2:} there is enough time\\
+\textbf{AS-3:} pattern exists in Sumerian date to create efficient algorithm\\
+\\
 \textbf{DE-1:} depending on work of previous group’s work
 
 
@@ -114,7 +115,7 @@ UI details will be included in another specification.
 \subsection{SOFTWARE INTERFACES}
 PHP for website.\\
 Java for database.\\
-Python for cleaning the data.\\
+Python for cleaning the data.
 
 \section{SYSTEM FEATURES}
 
@@ -157,6 +158,7 @@ The top priority for the software quality is for it to be accurate 60\% of the t
 The user documentation will be minimal, the program should be intuitive enough that extra documentation is not required.
 \subsection{PROJECT DOCUMENTATION}
 We will include basic developer documentation for any continuation group after us.
+\newpage
 
 \section{USE CASES}
 
@@ -349,6 +351,7 @@ Notes and issues: & \\\hline
 
 
 \begin{landscape}
+\addcontentsline{toc}{section}{TRACEABILITY MATRIX}
 \begin{center}
 \Large \textbf{Traceability Matrix}\\ 
 \begin{tabular}{|m{2cm} |m{2.5cm}|m{2.5cm}|m{2.5cm}|m{2.5cm}|m{2.5cm}|m{2.5cm}|m{2.5cm}|}
